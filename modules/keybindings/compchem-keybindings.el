@@ -4,6 +4,8 @@
 (global-set-key (kbd "<C-wheel-up>") 'text-scale-increase)
 (global-set-key (kbd "<C-wheel-down>") 'text-scale-decrease)
 
+(global-set-key (kbd "s-a") #'cl/emacs-run-launcher)
+
  
 (global-set-key [escape] 'keyboard-escape-quit)
 

@@ -9,6 +9,7 @@
 ;; (define-key acm-mode-map (kbd "<backtab>") #'acm-select-prev)
 
 ;;(use-package lsp-mode
+;;  :ensure t 
 ;;  :init
 ;;  (setq lsp-keymap-prefix "C-c l")
 ;;  :hook ((c-mode          ; clangd
@@ -25,7 +26,7 @@
 ;;          erlang-mode     ; erlang-mode
 ;;          haskell-mode    ; haskell-mode 
 ;;          lisp-mode       ; lisp-mode
-;;          asm-mode        ;asm-lsp
+;;          asm-mode        ; asm-lsp
 ;;          ) . lsp-deferred)
 ;;  :preface
 ;;  (defun cl/lsp-execute-code-action ()
@@ -72,6 +73,7 @@
 ;;  (add-to-list 'lsp-language-id-configuration '(js-jsx-mode . "javascriptreact")))
 
 ;;(use-package lsp-ui
+;;  :ensure t 
 ;;  :commands lsp-ui-mode
 ;;  :custom-face
 ;;  (lsp-ui-sideline-global ((t (:italic t))))
@@ -117,3 +119,4 @@
 ;;          (setq lsp-pyright-python-executable-cmd "python3")))
 
  (provide 'compchem-lsp-mode)
+

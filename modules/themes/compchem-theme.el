@@ -9,7 +9,7 @@
         doom-themes-enable-italic t)
   ;; Enable flashing mode-line on errors
   (doom-themes-visual-bell-config)
- (load-theme 'doom-ayu-dark t)
+ (load-theme 'doom-gruvbox-material t)
   (if (display-graphic-p)``
       (progn
         ;; Enable custom neotree theme (all-the-icons must be installed!)
@@ -31,7 +31,6 @@
 ;;(setq catppuccin-flavor 'macchiato) ;; Opciones: 'latte, 'macchiato, 'mocha, 'frappe
 ;;(load-theme 'catppuccin :no-confirm)
 ;;(catppuccin-reload)
-
 
 ;; Custom Enabled Theme
 ;; Auto lod custom theme.
