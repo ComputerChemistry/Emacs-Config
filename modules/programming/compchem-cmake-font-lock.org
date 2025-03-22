@@ -1,6 +1,10 @@
+* cmake-font-lock
+
+#+begin_src emacs-lisp 
 (use-package cmake-font-lock
  :ensure t)
 
  (provide 'compchem-cmake-font-lock)
 
  ;;; compchem-cmake-font-lock.el ends here
+#+end_src 

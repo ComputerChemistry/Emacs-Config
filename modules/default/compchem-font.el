@@ -39,3 +39,5 @@
 (global-font-lock-mode 1)    
 
  (provide 'compchem-font)
+
+  ;;; compchem-font.el ends here

@@ -6,3 +6,5 @@
   (markdown-code-face ((t (:background unspecified :inherit lsp-ui-doc-background)))))
 
  (provide 'compchem-markdown-mode)
+ 
+  ;;; compchem-markdown-mode.el ends here

@@ -8,3 +8,4 @@
   (pyvenv-mode +1))
 
  (provide 'compchem-pyenv)
+ ;;; compchem-pyenv.el ends here

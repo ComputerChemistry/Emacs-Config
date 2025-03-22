@@ -5,6 +5,10 @@
   (setq shell-file-name "/bin/sh"
         vterm-max-scrollback 5000))
 
+ (add-hook 'vterm-mode-hook
+          (lambda ()
+            (set (make-local-variable 'buffer-face-mode-face) '(:family "Iosevka Nerd Font"))
+                 (buffer-face-mode t)))
 
 (use-package vterm-toggle
   :ensure t 

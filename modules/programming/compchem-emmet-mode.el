@@ -14,8 +14,6 @@
   (add-hook 'web-mode-hook #'(lambda ()
                                (setq-local emmet-expand-jsx-className? t))))
 
-
-
 ;;;;; web
 ;;(use-package emmet-mode
 ;;  :after (web-mode css-mode scss-mode)
@@ -31,7 +29,6 @@
 ;;         ("C-c [" . emmet-prev-edit-point)
 ;;         ("C-c ]" . emmet-next-edit-point)))
 ;;)
-
 
 
  (provide 'compchem-emmet-mode)

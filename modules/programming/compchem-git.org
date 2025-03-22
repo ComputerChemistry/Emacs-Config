@@ -1,3 +1,6 @@
+* Git-Magit-Git-Time-Machine
+
+#+begin_src emacs-lisp 
 ;;Magit 
 (use-package magit
   :ensure t)
@@ -17,5 +20,5 @@
 
  (provide 'compchem-git) 
 
-
 ;;; compchem-git.el ends here
+ #+end_src 

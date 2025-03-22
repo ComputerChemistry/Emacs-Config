@@ -6,4 +6,5 @@
         kubernetes-redraw-frequency 3600))
 
  (provide 'compchem-kubernetes )
+ ;;; compchem-kubernetes.el ends here
 

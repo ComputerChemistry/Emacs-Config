@@ -22,3 +22,5 @@
 
 
  (provide 'compchem-rainbow-mode)
+
+  ;;; compchem-rainbow-mode.el ends here

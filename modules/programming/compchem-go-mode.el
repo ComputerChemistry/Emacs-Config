@@ -6,3 +6,5 @@
   ;;  (evil-define-key '(motion normal) go-mode-map (kbd "K") #'(lambda () (interactive) (lsp-ui-doc-glance) (cl/pulse-line)))))
 
  (provide 'compchem-go-mode)
+
+ ;;; compchem-go-mode.el ends here
