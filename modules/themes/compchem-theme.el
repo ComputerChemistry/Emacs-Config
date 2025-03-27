@@ -9,17 +9,38 @@
         doom-themes-enable-italic t)
   ;; Enable flashing mode-line on errors
   (doom-themes-visual-bell-config)
- (load-theme 'doom-gruvbox-material t)
+;;  (load-theme 'doom-nord t)
   (if (display-graphic-p)``
       (progn
-        ;; Enable custom neotree theme (all-the-icons must be installed!)
-        (doom-themes-neotree-config)
-        ;; or for treemacs users
-        (setq doom-themes-treemacs-theme "doom-colors") ; use the colorful treemacs theme
-        (doom-themes-treemacs-config)
-        ))
+	;; Enable custom neotree theme (all-the-icons must be installed!)
+	(doom-themes-neotree-config)
+	;; or for treemacs users
+	(setq doom-themes-treemacs-theme "doom-colors") ; use the colorful treemacs theme
+	(doom-themes-treemacs-config)
+	))
   ;; Corrects (and improves) org-mode's native fontification.
   (doom-themes-org-config))
+ 
+(progn
+  (load-theme 'doom-one t)
+ ;;  Forzar color de fondo más oscuro (alto contraste)
+  (set-face-attribute 'default nil :background "#212121")
+  (set-face-attribute 'fringe nil :background "#212121"))
+
+
+;; Forzar fondo negro
+;;(set-face-background 'default "black")
+
+;; Hacer transparente el fondo de las demás caras (faces) 
+;;(defun my/remove-theme-backgrounds ()
+;;  (interactive)
+;;  (mapc (lambda (face)
+;;          (when (facep face)
+;;            (set-face-attribute face nil :background 'unspecified)))
+;;        (face-list)))
+
+;; Llamar después de cargar un tema
+;;(add-hook 'after-load-theme-hook #'my/remove-theme-backgrounds)
 
  (custom-set-faces
   '(font-lock-comment-face ((t (:foreground "#6A9955"))))) ;; Verde similar al de VS Code

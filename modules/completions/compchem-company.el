@@ -27,7 +27,17 @@
   (setq company-box-doc-enable nil)
   (setq company-box-scrollbar nil)
   (setq company-box-frame-behavior 'default))
-  (provide 'compchem-company)
+
+;;Backend for provide completions for haskell
+ 
+(use-package company-ghci
+  :ensure t
+  :after company
+  :hook (haskell-mode . (lambda ()
+                          (add-to-list 'company-backends 'company-ghci)))
+  :config
+  (setq company-ghci-load-on-start t))
+
 
   ;;(use-package company
 ;;  :defer 2
@@ -52,7 +62,5 @@
 ;;  (setq company-box-doc-enable nil)
 ;;  (setq company-box-scrollbar nil)
 ;;  (setq company-box-frame-behavior 'default))
-
-
 
   (provide 'compchem-company)

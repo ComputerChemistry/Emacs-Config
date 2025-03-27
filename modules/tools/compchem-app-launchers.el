@@ -49,6 +49,12 @@
                     (app-launcher-run-app)
                     (delete-frame))))
 
+(defun cl/apply-theme-to-new-frame (frame)
+  (with-selected-frame frame
+    (unless (member 'modus-vivendi custom-enabled-themes)
+      (load-theme 'doom-gruvbox-material t))))
+
+(add-hook 'after-make-frame-functions #'cl/apply-theme-to-new-frame)
 
 (provide 'compchem-app-launchers)
 ;;; app-launchers.el ends here
