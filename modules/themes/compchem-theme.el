@@ -9,7 +9,7 @@
         doom-themes-enable-italic t)
   ;; Enable flashing mode-line on errors
   (doom-themes-visual-bell-config)
-;;  (load-theme 'doom-nord t)
+  (load-theme 'doom-tomorrow-night t)
   (if (display-graphic-p)``
       (progn
 	;; Enable custom neotree theme (all-the-icons must be installed!)
@@ -21,26 +21,15 @@
   ;; Corrects (and improves) org-mode's native fontification.
   (doom-themes-org-config))
  
-(progn
-  (load-theme 'doom-one t)
+;;(progn
+;;  (load-theme 'doom-solarized-dark-high-contrast t)
  ;;  Forzar color de fondo más oscuro (alto contraste)
-  (set-face-attribute 'default nil :background "#212121")
-  (set-face-attribute 'fringe nil :background "#212121"))
+;;  (set-face-attribute 'default nil :background "#001a1d")
+;;  (set-face-attribute 'fringe nil :background "#001a1d"))
 
 
 ;; Forzar fondo negro
-;;(set-face-background 'default "black")
-
-;; Hacer transparente el fondo de las demás caras (faces) 
-;;(defun my/remove-theme-backgrounds ()
-;;  (interactive)
-;;  (mapc (lambda (face)
-;;          (when (facep face)
-;;            (set-face-attribute face nil :background 'unspecified)))
-;;        (face-list)))
-
-;; Llamar después de cargar un tema
-;;(add-hook 'after-load-theme-hook #'my/remove-theme-backgrounds)
+;;(set-face-background 'default "#0a0d12")
 
  (custom-set-faces
   '(font-lock-comment-face ((t (:foreground "#6A9955"))))) ;; Verde similar al de VS Code

@@ -47,10 +47,13 @@
 
 (add-hook 'org-mode-hook 'org-indent-mode)
 (use-package org-bullets
- :ensure t)
+  :ensure t)
 (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
 
 (eval-after-load 'org-indent '(diminish 'org-indent-mode))
+
+(use-package org-scrum
+  :ensure t)
 
 (require 'org-tempo)
 
