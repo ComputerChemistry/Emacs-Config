@@ -1,8 +1,10 @@
 (use-package ivy
+  :ensure t
   :bind
   ;; ivy-resume resumes the last Ivy-based completion.
   (("C-c C-r" . ivy-resume)
-   ("C-x B" . ivy-switch-buffer-other-window))
+   ("C-x B" . ivy-switch-buffer-other-window)
+   ("C-s" . swiper-isearch))
   :diminish
   :custom
   (setq ivy-use-virtual-buffers t)

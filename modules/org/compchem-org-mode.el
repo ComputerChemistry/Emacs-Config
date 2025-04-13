@@ -55,6 +55,9 @@
 (use-package org-scrum
   :ensure t)
 
+(use-package org-drill
+  :ensure t)
+
 (require 'org-tempo)
 
 (provide 'compchem-org-mode)

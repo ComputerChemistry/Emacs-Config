@@ -1,4 +1,3 @@
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;                                                                            ;;
 ;;			    Package Repositories                              ;; 
@@ -6,7 +5,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
-;;..............................................................................
+;..............................................................................
 
  (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
@@ -81,7 +80,7 @@
     (require 'compchem-pdf-tools)
     (require 'compchem-latex) ;; latex stuff
     (require 'compchem-package-repos) ;; package repositories to load
-    (require 'compchem-keybindings) ;; emacs keybings 
+    (require 'compchem-keybindings) ;; emacs keybindings 
     (require 'compchem-theme) ;;user interface packages 
     (require 'compchem-neotree)
     (require 'compchem-projectile) ;; tool for manage projects in emacs 
@@ -139,6 +138,7 @@
     (require 'compchem-emmet-mode)
     (require 'compchem-web-mode)
     (require 'compchem-slime)
+    (require 'compchem-sly)
     (require 'compchem-erlang)
     (require 'compchem-racket-mode)
     (require 'compchem-paredit)
@@ -147,8 +147,9 @@
     (require 'compchem-cmake-font-lock)
     (require 'compchem-kubernetes)
     (require 'compchem-docker)
-    
+    (require 'compchem-terraform-mode)
+    (require 'compchem-poly-ansible)
+;;; init.el ends here
 
-    
 
-
+ 

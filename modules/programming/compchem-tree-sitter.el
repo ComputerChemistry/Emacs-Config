@@ -1,4 +1,5 @@
 (use-package tree-sitter
+  :ensure t
   :after tree-sitter-langs
   :custom-face
   (tree-sitter-hl-face:property         ((t (:slant normal))))
@@ -12,7 +13,8 @@
   (global-tree-sitter-mode)
   (add-hook 'tree-sitter-after-on-hook #'tree-sitter-hl-mode))
 
-(use-package tree-sitter-langs)
+(use-package tree-sitter-langs
+  :ensure t)
 
  (provide 'compchem-tree-sitter)
 
