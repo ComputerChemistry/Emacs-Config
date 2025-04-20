@@ -1,4 +1,5 @@
 (use-package typescript-mode
+  :ensure t
   :mode ("\\.tsx?\\'" . typescript-mode))
 
   ;;:config

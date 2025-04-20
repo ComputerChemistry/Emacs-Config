@@ -9,7 +9,7 @@
         doom-themes-enable-italic t)
   ;; Enable flashing mode-line on errors
   (doom-themes-visual-bell-config)
-  (load-theme 'doom-wilmersdorf t)
+  (load-theme 'doom-dark+ t)
   (when (display-graphic-p)
       (progn
 	;; Enable custom neotree theme (all-the-icons must be installed!)
@@ -68,15 +68,15 @@
 	doom-modeline-icon t
 	doom-modeline-persp-icon t)) ;; adds folder icon next to persp name
 
-;;(with-eval-after-load 'doom-modeline
-;;  (set-face-attribute 'mode-line nil
-;;                     :background "#0a0d12"
-;;                      :foreground "#cdd6f4"
-;;                      :box nil)
-;;  (set-face-attribute 'mode-line-inactive nil
-;;                      :background "#0a0d12"
-;;                      :foreground "#5c6370"
-;;                      :box nil))
+(with-eval-after-load 'doom-modeline
+ (set-face-attribute 'mode-line nil
+                    :background "#1e1e1e"
+ ;;                    :foreground "#cdd6f4"
+                     :box nil)
+ (set-face-attribute 'mode-line-inactive nil
+                     :background "#1e1e1e"
+ ;;                    :foreground "#5c6370"
+                     :box nil))
 
 
 
