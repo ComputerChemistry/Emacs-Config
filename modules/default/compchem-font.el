@@ -1,15 +1,15 @@
 
 (set-face-attribute 'default nil
   :font "Iosevka"
-  :height 120)
+  :height 130)
  ;; :weight 'regular)
  (set-face-attribute 'variable-pitch nil
   :font "Iosevka"
-  :height 120)
+  :height 130)
  ;; :weight 'regular)
 (set-face-attribute 'fixed-pitch nil
   :font "Iosevka"
-  :height 120)
+  :height 130)
  ;; :weight 'regular)
 ;; Makes commented text and keywords italics.
 ;; This is working in emacsclient but not emacs.
@@ -30,12 +30,12 @@
 
 
 ;; Márgenes en los lados
-(setq-default left-margin-width 4)  ;; Márgenes laterales más cómodos
-(setq-default right-margin-width 4) ;; Márgenes laterales más cómodos
+(setq-default left-margin-width 2)  ;; Márgenes laterales más cómodos
+(setq-default right-margin-width 2) ;; Márgenes laterales más cómodos
 
 (set-window-buffer nil (current-buffer))
 
-(add-to-list 'default-frame-alist '(font . "Iosevka-12"))  ;; Fuente para emacsclient
+(add-to-list 'default-frame-alist '(font . "Iosevka-13"))  ;; Fuente para emacsclient
 (global-font-lock-mode 1)    
 
  (provide 'compchem-font)

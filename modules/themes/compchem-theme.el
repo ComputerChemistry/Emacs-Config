@@ -4,12 +4,12 @@
   :if window-system
   :custom-face
  ;; (cursor ((t (:background "#d699b6"))))
-  :config
+  :config 
   (setq doom-themes-enable-bold t
         doom-themes-enable-italic t)
   ;; Enable flashing mode-line on errors
   (doom-themes-visual-bell-config)
-  (load-theme 'doom-dark+ t)
+  (load-theme 'doom-gruvbox-material t)
   (when (display-graphic-p)
       (progn
 	;; Enable custom neotree theme (all-the-icons must be installed!)
@@ -44,8 +44,8 @@
 
 ;; Custom Enabled Theme
 ;; Auto lod custom theme.
-;;(setq custom-enabled-themes '(ef-dream))
-;;(setq custom-safe-themes '(ef-dream))
+(setq custom-enabled-themes '(doom-gruvbox-material))
+(setq custom-safe-themes '(doom-gruvbox-material))
 
 ;; Restablece las caras de los números de línea
 ;;(set-face-attribute 'line-number nil :inherit 'default :foreground nil :background nil)
@@ -68,15 +68,15 @@
 	doom-modeline-icon t
 	doom-modeline-persp-icon t)) ;; adds folder icon next to persp name
 
-(with-eval-after-load 'doom-modeline
- (set-face-attribute 'mode-line nil
-                    :background "#1e1e1e"
- ;;                    :foreground "#cdd6f4"
-                     :box nil)
- (set-face-attribute 'mode-line-inactive nil
-                     :background "#1e1e1e"
- ;;                    :foreground "#5c6370"
-                     :box nil))
+;; (with-eval-after-load 'doom-modeline
+;;  (set-face-attribute 'mode-line nil
+;;                     :background "#1e1e1e"
+;;  ;;                    :foreground "#cdd6f4"
+;;                      :box nil)
+;;  (set-face-attribute 'mode-line-inactive nil
+;;                      :background "#1e1e1e"
+;;  ;;                    :foreground "#5c6370"
+;;                      :box nil))
 
 
 
