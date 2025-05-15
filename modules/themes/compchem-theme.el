@@ -9,7 +9,7 @@
         doom-themes-enable-italic t)
   ;; Enable flashing mode-line on errors
   (doom-themes-visual-bell-config)
-  (load-theme 'doom-gruvbox-material t)
+  (load-theme 'doom-solarized-light t)
   (when (display-graphic-p)
       (progn
 	;; Enable custom neotree theme (all-the-icons must be installed!)
@@ -44,8 +44,8 @@
 
 ;; Custom Enabled Theme
 ;; Auto lod custom theme.
-(setq custom-enabled-themes '(doom-gruvbox-material))
-(setq custom-safe-themes '(doom-gruvbox-material))
+(setq custom-enabled-themes '(doom-gruvbox-light))
+(setq custom-safe-themes '(doom-gruvbox-light))
 
 ;; Restablece las caras de los números de línea
 ;;(set-face-attribute 'line-number nil :inherit 'default :foreground nil :background nil)
@@ -77,8 +77,6 @@
 ;;                      :background "#1e1e1e"
 ;;  ;;                    :foreground "#5c6370"
 ;;                      :box nil))
-
-
 
  (provide 'compchem-theme)
 

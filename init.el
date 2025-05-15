@@ -149,6 +149,7 @@
     (require 'compchem-docker)
     (require 'compchem-terraform-mode)
     (require 'compchem-poly-ansible)
+    (require 'compchem-presentations)
  
 ;;; Init.el ends here
 
