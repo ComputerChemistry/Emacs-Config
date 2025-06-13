@@ -1,13 +1,13 @@
 ;;Magit 
 (use-package magit
-  :ensure t)
+    :defer t)
 
 ;;Magit-Transient
 (elpaca transient)
 (elpaca (magit :wait t))
 
 (use-package git-timemachine
-  :ensure t 
+  :defer t 
   :after git-timemachine
   :config
   (add-hook 'git-timemachine-mode-hook
